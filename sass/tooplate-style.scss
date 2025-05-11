@@ -202,6 +202,33 @@ b, strong {
     }
 }
 
+// Mobile menu styles
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background: $dark-mode-color;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 4px;
+  }
+  
+  .navbar-nav {
+    .nav-item {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    .nav-link {
+      color: $text-white !important;
+      font-weight: $font-weight-bold;
+      &:hover {
+        color: $main-color !important;
+      }
+    }
+  }
+}
+
 .navbar-brand {
 	font-weight: $font-weight-bold;
 }
